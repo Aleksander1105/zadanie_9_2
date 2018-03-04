@@ -4,11 +4,8 @@ var allNames = ladiesNames.concat(maleNames);
 var newName = 'Marian';
 
 if (allNames.indexOf(newName) === -1) {
-	console.log("You can go further");
+	allNames.push(newName);
+	console.log(allNames);
 } else {
 	console.log("You can't go any further");
 }
-
-var x = allNames.push(newName);
-
-console.log(allNames);
